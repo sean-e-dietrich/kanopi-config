@@ -1,0 +1,36 @@
+{
+    "name": "kanopi/docksal_config_pantheon",
+    "description": "Docksal Configuration for Pantheon Project",
+    "license": "MIT",
+    "type": "project",
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[project-root]/.docksal/docksal.env": {
+                    "mode": "replace",
+                    "path": "drupal/docksal.env",
+                    "replace": false
+                },
+                "[project-root]/.docksal/docksal.yml": {
+                    "mode": "replace",
+                    "path": "drupal/docksal.yml",
+                    "replace": false
+                }
+            }
+        },
+        "wordpress-scaffold": {
+            "file-mapping": {
+                "[project-root]/.docksal/docksal.env": {
+                    "mode": "replace",
+                    "path": "drupal/docksal.env",
+                    "replace": false
+                },
+                "[project-root]/.docksal/docksal.yml": {
+                    "mode": "replace",
+                    "path": "drupal/docksal.yml",
+                    "replace": false
+                }
+            }
+        }
+    }
+}

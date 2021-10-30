@@ -1,0 +1,26 @@
+{
+    "name": "kanopi/circleci_config_pantheon",
+    "description": "CircleCI Configuration for Pantheon Project",
+    "license": "MIT",
+    "type": "project",
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[project-root]/.circleci/config.yml": {
+                    "mode": "replace",
+                    "path": "drupal/config.yml",
+                    "replace": false
+                }
+            }
+        },
+        "wordpress-scaffold": {
+            "file-mapping": {
+                "[project-root]/.circleci/config.yml": {
+                    "mode": "replace",
+                    "path": "wordpress/config.yml",
+                    "replace": false
+                }
+            }
+        }
+    }
+}
